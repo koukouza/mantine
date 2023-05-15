@@ -1,4 +1,5 @@
-import { AppShell, Navbar, Header, Aside, Footer } from "@mantine/core";
+import { AppShell, Navbar, Button, Group } from "@mantine/core";
+import CustomNavbar from './components/CustomNavbar/CustomNavbar.js';
 import "./App.css";
 
 // Mantine : Une bibliothèque de composants React complète
@@ -6,14 +7,17 @@ import "./App.css";
 function App() {
   return (
     <AppShell
-      navbar={
-        <Navbar width={{ base: 300 }} height="100vh">
-          {/* Navbar Content */}
-        </Navbar>
-      }
-    >
-      {/* Your application here */}
-    </AppShell>
+    navbar={
+      <Navbar
+        width={{ base: 300 }}
+        height='100vh'
+      >
+        <CustomNavbar />
+      </Navbar>
+    }
+  >
+    {/* Your application here */}
+  </AppShell>
   );
 }
 
