@@ -11,6 +11,11 @@ root.render(
     <MantineProvider
     theme={{
       colorScheme: 'dark'
+    }}
+    styles={{
+      Navbar: {
+        root: { height: '100vh', width: '300px' }
+      }
     }}>
       <App />
     </MantineProvider>
