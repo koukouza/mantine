@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { AppShell, Navbar, Header, Aside, Footer } from "@mantine/core";
+import "./App.css";
+
+// Mantine : Une bibliothèque de composants React complète
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppShell
+      navbar={
+        <Navbar width={{ base: 300 }} height="100vh">
+          {/* Navbar Content */}
+        </Navbar>
+      }
+    >
+      {/* Your application here */}
+    </AppShell>
   );
 }
 
